@@ -1,0 +1,232 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.layout{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin: auto;
+    grid-template-columns: 100px repeat(7,1fr);
+    grid-template-rows: 100px 100px 500px 50px;
+    grid-template-areas: "in in in in in in in in"
+    "hd hd hd hd hd hd hd hd"
+    "nv nv ct ct ct ct ct ct"
+    "ft ft ft ft ft ft ft ft";
+}
+.box{
+    border: thin solid gray;
+}
+.intro{
+    grid-area: in;
+    vertical-align: baseline;
+    background: transparent;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.intro a{
+    vertical-align: baseline;
+    background: transparent;
+    margin: auto;
+    float: left;
+    margin-top:0.5em;
+    text-decoration: none;
+}
+#right{
+    float:right;
+}
+.menu,.search{
+    display: flex;
+    align-items: center;
+}
+.menu img{
+    margin-right: 10px;
+}
+.search img{
+    margin-right: 10px;
+}
+.menu p, .search p {
+    color: teal;
+    font-size: 20px;
+    text-align: center;
+}
+.menu{
+    margin-left: 20px;
+}
+.search, .join {
+    margin-right: 20px;
+}
+.header{
+    grid-area: hd;
+    text-align: center;
+
+}
+
+.nav{
+    grid-area: nv;
+}
+.homepageindex li{
+    margin-bottom: 10px;
+    color: green
+}
+input[type=date] {
+    background-color: #3CBC8D;
+    color: white;
+    width: 80%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px ;
+    margin-left: 5%;
+    margin-right: 5px;
+  }
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 60PX
+  }
+  label p{
+      text-align: center;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 4px 2px;
+    margin-left: 90px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .button:hover{
+    background-color: #18b0d6;
+  }
+  select {
+    background-color: #3CBC8D;
+    color: white;
+    width: 90%;
+    margin-left: 10px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px ;
+  }
+.content{
+    grid-area: ct;
+}
+/*
+#who{
+    color:#1f98ff;
+}
+#when{
+    font-weight: 500;
+    text-decoration: crimson;
+}
+.info{
+    text-align: center;
+}*/
+#blog-posts{
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+    padding: 5px;
+    background-color: #fff;
+    width: 30%;
+    float:left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 15px ;
+}
+#blog-posts img{
+    width: 100%;
+}
+#blog-posts h2{
+    margin-top: 10px;
+    font-size: 16px;
+    color: darkblue;
+}
+#blog-posts span{
+    float: right;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+#blog1text{
+    font-size: 14px;
+    text-align: justify;
+
+}
+#admininfo{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.readmore{ 
+    float: left;
+    font-size: 14px;
+    color: cornflowerblue;
+    margin-right: 8px;
+    width:30%;
+    height:30%
+}
+/* Share Buttons */
+
+.share-btn-container {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 1px;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        left: 40%;
+        padding: 10px;
+            transform: translateY(-50%);
+       */
+  }
+  .share-btn-container a i {
+    font-size: 20px;
+    margin-left: 8px;
+  }
+  .share-btn-container a {
+    margin: 5px 0;
+    transition: 500ms;
+  }
+  .share-btn-container .fa-facebook {
+    color: #3b5998;
+  }
+  
+.share-btn-container .fa-twitter {
+    color: #1da1f2;
+  }
+  
+  .share-btn-container .fa-linkedin {
+    color: #0077b5;
+  }
+  
+  .share-btn-container .fa-pinterest {
+    color: #bd081c;
+  }
+  
+  .share-btn-container .fa-whatsapp {
+    color: #25d366;
+  }
+  
+  .share-btn-container a:hover {
+    transform: scale(1.2);
+  }
+.footer{
+    grid-area: ft;
+    background: transparent;
+    width: 80%;
+    height: 80%;
+    background-color: blanchedalmond;
+    align-items: center;
+    margin: auto;
+    display: inline-block;
+}
+.footer h3{
+    text-align: center;
+}
